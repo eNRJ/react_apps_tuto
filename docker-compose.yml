@@ -10,6 +10,17 @@ services:
         container_name: node_react_apps_tuto
         ports:
             - 3000:3000
+            - 35729:35729
         volumes:
             - .:/app
         tty: true
+        networks:
+            react_apps_tuto:
+                aliases:
+                    - react_apps_tuto
+        environment:
+            - CHOKIDAR_USEPOLLING=true                    -
+networks:
+    react_apps_tuto:
+        external:
+            name: react_apps_tuto
