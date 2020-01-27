@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+    php:
+        build:
+            dockerfile: ./Dockerfile
+            context: .
+        cap_add:
+          - NET_ADMIN
+        container_name: node_react_apps_tuto
+        ports:
+            - 3000:3000
+        volumes:
+            - .:/app
+        tty: true
