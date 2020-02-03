@@ -1,3 +1,20 @@
+# NRJ
+## install react app tuto
+vm config up to date and `dc up -d` in vm_config
+
+`source ~/.bash_aliases`
+`dc up -d`
+`yarn install`
+
+if permission problem when install
+
+`sudo rm -rf node_modules/`
+`yarn install`
+
+done :)
+
+# REACT
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
