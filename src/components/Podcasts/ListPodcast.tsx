@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, FC } from 'react'
 import Podcast from '../../models/Podcast'
 import { ItemList, List } from '../organisms'
 
-export const ListPodcast: React.FC<{podcasts: Podcast[]}> = ({podcasts}) => {
+export const ListPodcast: FC<{podcasts: Podcast[]}> = ({podcasts}) => {
   return (
     <Fragment>
       <h1>Mes podcasts</h1>

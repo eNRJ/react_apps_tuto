@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import { getLastPodcasts } from '../../services/ContentApiRequest'
 import Podcast from "../../models/Podcast";
 import { ListPodcast } from './ListPodcast'
