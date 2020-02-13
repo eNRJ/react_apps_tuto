@@ -1,6 +1,10 @@
 import React from 'react'
 
-export const List: React.FC<{children: React.ReactNode}> = ({children}) => {
+interface IProp {
+  children: React.ReactNode
+}
+
+export const List: React.FC<IProp> = ({children}) => {
   return (
     <ul>
       {children}

@@ -3,9 +3,13 @@ import { getLastPodcasts } from '../../services/ContentApiRequest'
 import Podcast from "../../models/Podcast";
 import { ListPodcast } from './ListPodcast'
 
+interface IState {
+  podcasts:Podcast[] 
+}
+
 class PodcastList extends Component {
 
-  state:{ podcasts:Podcast[] } = {
+  state:IState = {
     podcasts: []
   }
 

@@ -1,6 +1,12 @@
 import React, { FC } from 'react'
 
-export const ItemList: FC<{title:string, description?:string, image:string}> = ({title, description, image}) => {
+interface IProp {
+  title:string,
+  description?:string,
+  image:string
+}
+
+export const ItemList: FC<IProp> = ({title, description, image}) => {
   return (
     <div>
       <h2>{title}</h2>

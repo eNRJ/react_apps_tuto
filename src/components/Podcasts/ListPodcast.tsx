@@ -2,7 +2,11 @@ import React, { Fragment, FC } from 'react'
 import Podcast from '../../models/Podcast'
 import { ItemList, List } from '../organisms'
 
-export const ListPodcast: FC<{podcasts: Podcast[]}> = ({podcasts}) => {
+interface IProp {
+  podcasts: Podcast[]
+}
+
+export const ListPodcast: FC<IProp> = ({podcasts}) => {
   return (
     <Fragment>
       <h1>Mes podcasts</h1>
